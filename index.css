@@ -17,16 +17,28 @@ h1 {
   color: #824936;
 }
 
+img {
+  max-width: 100%;
+  border: 0;
+}
+
 section {
   min-height: 16rem;
   display: flex;
   flex-wrap: nowrap;
   padding: 0 6rem;
+  gap: 2rem;
+}
+
+section:not(.quality-designs) {
+  padding: 3rem 6rem;
 }
 
 .section-image {
   margin: auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
 }
 
 .two-column {
@@ -43,6 +55,25 @@ section {
 .quality-designs h2 {
   color: #824936;
   text-align: center;
+}
+
+.section-text,
+.section-image {
+  flex-grow: 0;
+  width: 50%;
+}
+
+.section-text {
+  /* border: 1px solid yellow; */
+}
+
+.section-text h2 {
+  /* border: 1px solid cyan; */
+  margin-top: 0;
+}
+
+.section-text p {
+  /* border: 1px solid hotpink; */
 }
 
 section:nth-child(2) {
